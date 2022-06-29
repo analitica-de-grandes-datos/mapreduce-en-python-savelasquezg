@@ -11,7 +11,7 @@ def set_bsmalleramount(ba, sa, aelement):
         float(ba.get(earray[0]) or 0), float(earray[1]))
     sa[earray[0]] = min(
         float(sa.get(earray[0]) or 10000), float(earray[1]))
-    return ba, samount
+    return ba, sa
 
 for line in sys.stdin:
     set_bsmalleramount(ba, sa, line)
