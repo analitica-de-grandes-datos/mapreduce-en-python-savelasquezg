@@ -15,5 +15,6 @@ def pa(x):
 for line in sys.stdin:
     line = line.replace("'","")
     result = line.split(pa(result) 
+    number, array = pa(result) 
     for letter_array in array:
         print(letter_array + "*" + number)
