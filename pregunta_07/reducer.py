@@ -9,9 +9,9 @@ def set_bp(dictionary_purposes, aelement):
     aelement = aelement.replace("\n", "")
     letter = aelement.split(" ") [0]
     if  str(dictionary_purposes.get(letter) or "") == "":
-        dictionary_purposes[letter] =    str(dictionary_purposes.get(letter) or "") + actual_element.split(" ") [1]
+        dictionary_purposes[letter] =    str(dictionary_purposes.get(letter) or "") + aelement.split(" ") [1]
     else:
-        dictionary_purposes[letter] =    str(dictionary_purposes.get(letter) or "") +  "*" + actual_element.split(" ") [1]
+        dictionary_purposes[letter] =    str(dictionary_purposes.get(letter) or "") +  "*" + aelement.split(" ") [1]
     return dictionary_purposes
 
 
