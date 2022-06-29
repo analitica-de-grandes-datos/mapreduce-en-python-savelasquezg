@@ -4,7 +4,7 @@
 import sys
 bp = {}
 
-def set_bigger_purpose(dictionary_purposes, actual_element):
+def set_bp(dictionary_purposes, actual_element):
     element_array = actual_element.split("*")
     dictionary_purposes[element_array[0]] = max(
         int(dictionary_purposes.get(element_array[0]) or 0), int(element_array[1]))
