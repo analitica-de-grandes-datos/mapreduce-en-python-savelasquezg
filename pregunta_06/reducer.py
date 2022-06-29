@@ -3,7 +3,7 @@
 #
 import sys
 ba = {}
-s = {}
+sa = {}
 
 def set_bsmalleramount(ba, sa, aelement):
     earray = aelement.split("*")
