@@ -11,7 +11,7 @@ def set_bp(dictionary_purposes, actual_element):
     return dictionary_purposes
 
 for line in sys.stdin:
-    set_bp(biggest_purposes, line)
+    set_bp(bp, line)
 
 for purpose, amount in bp.items():
     print(purpose + "," + str(amount))
