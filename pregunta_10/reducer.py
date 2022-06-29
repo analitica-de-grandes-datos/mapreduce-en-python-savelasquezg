@@ -11,10 +11,10 @@ def cspaces(x):
 
 def set_biggersmalleramount(elements, aelement):
     earray = aelement.split("*")
-    if element_array[0] in elements:
-        elements[element_array[0]] = elements.get(element_array[0]) +  [int(clear_spaces(element_array[1]))]
+    if earray[0] in elements:
+        elements[earray[0]] = elements.get(earray[0]) +  [int(cspaces(earray[1]))]
     else:
-        elements[element_array[0]] = [int(clear_spaces(element_array[1]))]
+        elements[earray[0]] = [int(cspaces(earray[1]))]
     return elements
 
 for line in sys.stdin:
